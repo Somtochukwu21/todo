@@ -31,6 +31,7 @@ window.onload = function () {
 };
 
 class ToDo {
+  
   toDoCount = 0;
 
   add(title) {
