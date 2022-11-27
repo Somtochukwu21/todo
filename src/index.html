@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo App</title>
+    <link rel="stylesheet" href="../dist/output.css" />
+  </head>
+  <body class="h-[100vh]">
+    <div
+      class="h-[100%] overflow-scroll overflow-x-hidden p-4 bg-gradient-to-t from-cyan-500 to-emerald-400"
+    >
+      <div class="flex justify-center items-center">
+        <div class="w-[500px] p-4 rounded-sm shadow bg-white">
+          <div>
+            <h1 class="text-2xl font-bold">Todo App</h1>
+          </div>
+          <form action="#" class="flex items-center gap-2 my-6">
+            <input
+              type="text"
+              name=""
+              class="placeholder:text-lg border py-2 px-3 w-full text-lg outline-none text-gray-500"
+              placeholder="Add your new todo"
+              id=""
+            />
+
+            <button
+              class="text-3xl text-white bg-purple-700 p-[0.40rem] w-[60px] rounded font-bold addToDoBtn"
+            >
+              +
+            </button>
+          </form>
+          <ul
+            class="[&>*]:pl-4 [&>*]:flex-wrap [&>*]:flex [&>*]:justify-between [&>*]:items-center [&>*]:my-2 [&>*]:bg-gray-100 [&>*]:rounded [&>*>span:last-child]:bg-[tomato] [&>*>span:last-child]:text-center list-none [&>*>span:last-child]:w-12 [&>*>span:last-child]:font-bold [&>*>span:last-child]:text-white [&>*>span:last-child]:p-3"
+          ></ul>
+          <div class="flex w-full justify-between items-center mt-6">
+            <div>
+              <span>You have</span>
+              <span class="todoCount">0</span>
+              <span>pending tasks</span>
+            </div>
+            <input
+              type="button"
+              value="Clear All"
+              class="clearAll text-white bg-purple-700 p-2 rounded font-bold w-[100px]"
+            />
+          </div>
+          <!-- text-2xl -->
+        </div>
+      </div>
+      <script src="../assets/javasacript/app.js"></script>
+    </div>
+  </body>
+</html>
